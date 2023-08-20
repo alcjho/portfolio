@@ -12,16 +12,16 @@ import {
 } from './types/sections';
 
 export const greetings: GreetingsType = {
-  name: 'Hanzla Tauqeer',
-  title: "Hi all, I'm Hanzla",
+  name: 'Louis Jhonny Alcius',
+  title: "Hi! my name is Jhonny",
   description:
-    "I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, Moralis, and Brownie Framework.",
+    "I'm passionate Software Architect having an experience of monolithique, microservices and cloud infrastructure. I also have strong knowledge on some popular web development technologies such as serverless application with python, javascript or typescript, Static Site Generation and Server Side Rendering (SSR) with Nextjs and more.",
   resumeLink:
     'https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing',
 };
 
 export const openSource = {
-  githubUserName: '1hanzla100',
+  githubUserName: 'alcjho',
 };
 
 export const contact = {};
@@ -46,8 +46,7 @@ export const skillsSection: SkillsSectionType = {
         emoji(
           '⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
         ),
-        emoji('⚡ Building responsive static websites using Next.js'),
-        emoji('⚡ Building RESTful APIs in Django & Django REST Framework'),
+        emoji('⚡ Building responsive static websites using Next.js')
       ],
       softwareSkills: [
         {
@@ -75,15 +74,6 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: 'logos:python',
         },
         {
-          skillName: 'Django',
-          iconifyTag: 'vscode-icons:file-type-django',
-        },
-
-        {
-          skillName: 'Redux',
-          iconifyTag: 'logos:redux',
-        },
-        {
           skillName: 'NPM',
           iconifyTag: 'logos:npm-icon',
         },
@@ -99,10 +89,13 @@ export const skillsSection: SkillsSectionType = {
       skills: [
         emoji('⚡ Experience of working on multiple cloud platforms'),
         emoji(
-          '⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases'
+          '⚡ Experience with application development project with agile methodology'
         ),
         emoji(
-          '⚡ Building CI/CD pipelines for automated testing & deployment using Github Actions'
+          '⚡ Experience with COSMIC software estimation'
+        ),
+        emoji(
+          '⚡ Building CI/CD pipelines'
         ),
       ],
       softwareSkills: [
@@ -110,14 +103,6 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: 'AWS',
           iconifyTag: 'logos:aws',
-        },
-        {
-          skillName: 'Azure',
-          iconifyTag: 'logos:microsoft-azure',
-        },
-        {
-          skillName: 'Heroku',
-          iconifyTag: 'logos:heroku-icon',
         },
         {
           skillName: 'PostgreSQL',
@@ -136,10 +121,6 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: 'logos:github-actions',
         },
         {
-          skillName: 'Cloudinary',
-          iconifyTag: 'logos:cloudinary',
-        },
-        {
           skillName: 'Nginx',
           iconifyTag: 'logos:nginx',
         },
@@ -148,76 +129,39 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: 'logos:sentry-icon',
         },
       ],
-    },
-    {
-      title: 'Blockchain',
-      lottieAnimationFile: '/lottie/skills/ethereum.json', // Path of Lottie Animation JSON File
-      skills: [
-        emoji(
-          '⚡ Experience in developing Smart Contract using Solidity & Ethereum'
-        ),
-        emoji(
-          '⚡ Building Scripts for automated testing & deployment of Smart Contracts using Brownie & Infura'
-        ),
-        emoji(
-          '⚡ Experience of using Openzeppelin Smart Contract Standards & Chainlink Oracles'
-        ),
-        emoji('⚡ Developing NFT Smart Contracts using ERC-721 Token Standard'),
-        emoji(
-          '⚡ Building Dapps with React.js & Solidity using Web3.js, Moralis & IPFS'
-        ),
-      ],
-      softwareSkills: [
-        {
-          skillName: 'Ethereum',
-          iconifyTag: 'logos:ethereum',
-        },
-        {
-          skillName: 'Solidity',
-          iconifyTag: 'logos:solidity',
-        },
-        {
-          skillName: 'Web3js',
-          iconifyTag: 'logos:web3js',
-        },
-        {
-          skillName: 'Metamask',
-          iconifyTag: 'logos:metamask-icon',
-        },
-        {
-          skillName: 'Ganache',
-          iconifyTag: 'logos:ganache-icon',
-        },
-      ],
-    },
+    }
   ],
 };
 
 export const SkillBars: SkillBarsType[] = [
   {
-    Stack: 'Frontend/Design', //Insert stack or technology you have experience in
-    progressPercentage: '90', //Insert relative proficiency in percentage
+    Stack: 'Software Architecture',
+    progressPercentage: '90',
+  },
+  {
+    Stack: 'Frontend/Design',
+    progressPercentage: '60',
   },
   {
     Stack: 'Backend',
-    progressPercentage: '70',
+    progressPercentage: '80',
   },
   {
     Stack: 'Programming',
-    progressPercentage: '60',
+    progressPercentage: '80',
   },
 ];
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: 'Harvard University',
+    schoolName: 'Sherbrooke university',
     subHeader: 'Master of Science in Computer Science',
-    duration: 'September 2017 - April 2019',
-    desc: 'Participated in the research of XXX and published 3 papers.',
-    grade: 'Grade A',
+    duration: 'September 2017 - November 2020',
+    desc: 'Working on my first publication in the research on early sizing of microservices with COSMIC methods.',
     descBullets: [
-      'Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      'Equal sized band mechod of COSMIC for early estimation ',
+      'Microservice patterns',
+      'FSM patterns method to simplify mesurement'
     ],
   },
 ];
