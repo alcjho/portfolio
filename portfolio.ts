@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: 'Louis Jhonny Alcius',
   title: "Hi! my name is Jhonny",
   description:
-    "I'm a passionate Software Architect having an experience of monolithique, microservices and cloud infrastructure. I also have strong knowledge on some popular web development technologies such as serverless application with python, javascript or typescript, Static Site Generation (SSG), Incremental Site Regeneration (ISR) and Server Side Rendering (SSR) with Nextjs and much more.",
+    "I'm a passionate Software Architect having 5+ years modeling and building monolithique, microservices and cloud applications. With strong knowledge on some popular web development technologies such as AWS serverless application and MVC framework application, I had the opportunity to work with the most popular programming languages such as: python, javascript, typescript, php and java. I also have experience with Static Site Generation (SSG), Incremental Site Regeneration (ISR) and Server Side Rendering (SSR) with Nextjs to quote only those.",
   resumeLink:
     'https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing',
 };
