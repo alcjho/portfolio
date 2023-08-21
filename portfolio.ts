@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: 'Louis Jhonny Alcius',
   title: "Hi! my name is Jhonny",
   description:
-    "I'm passionate Software Architect having an experience of monolithique, microservices and cloud infrastructure. I also have strong knowledge on some popular web development technologies such as serverless application with python, javascript or typescript, Static Site Generation and Server Side Rendering (SSR) with Nextjs and more.",
+    "I'm a passionate Software Architect having an experience of monolithique, microservices and cloud infrastructure. I also have strong knowledge on some popular web development technologies such as serverless application with python, javascript or typescript, Static Site Generation (SSG), Incremental Site Regeneration (ISR) and Server Side Rendering (SSR) with Nextjs and much more.",
   resumeLink:
     'https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing',
 };
@@ -39,7 +39,7 @@ export const skillsSection: SkillsSectionType = {
   data: [
     {
       title: 'Cloud/Microservices Architecture',
-      lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
+      lottieAnimationFile: '/lottie/skills/cloud.json', // Path of Lottie Animation JSON File
       skills: [
         emoji('⚡ Experience of working on multiple cloud platforms'),
         emoji(
@@ -59,39 +59,24 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: 'logos:aws',
         },
         {
-          skillName: 'PostgreSQL',
-          iconifyTag: 'logos:postgresql',
+          skillName: 'Digital Ocean',
+          iconifyTag: 'logos:digital-ocean',
         },
         {
-          skillName: 'Github',
-          iconifyTag: 'akar-icons:github-fill',
-        },
-        {
-          skillName: 'Docker',
-          iconifyTag: 'logos:docker-icon',
-        },
-        {
-          skillName: 'Github Actions',
-          iconifyTag: 'logos:github-actions',
-        },
-        {
-          skillName: 'Nginx',
-          iconifyTag: 'logos:nginx',
-        },
-        {
-          skillName: 'Sentry',
-          iconifyTag: 'logos:sentry-icon',
-        },
+          skillName: 'Google Cloud Platform',
+          iconifyTag: 'logos:google-cloud',
+        }
       ],
     },
     {
       title: 'Full Stack Development',
       lottieAnimationFile: '/lottie/data.json', // Path of Lottie Animation JSON File
       skills: [
-        emoji(
-          '⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
-        ),
-        emoji('⚡ Building responsive static websites using Next.js')
+        emoji('⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'),
+        emoji('⚡ Building responsive static websites using Next.js'),
+        emoji('⚡ Knowledge on NoSQL, Oracle, MySQL/MariaDB database administration'),
+        emoji('⚡ Knowledge on ETL pipelines and data storage'),
+        emoji('⚡ Experience with OpenAI Large Language Modeling (LLM): generate amazon product description and find trending niche'),
       ],
       softwareSkills: [
         {
@@ -126,8 +111,63 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'Yarn',
           iconifyTag: 'logos:yarn',
         },
+        {
+          skillName: 'OpenAi',
+          iconifyTag: 'logos:openai',
+        },
       ],
     },
+    {
+      title: 'IT infrastructure',
+      lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
+      skills: [
+        emoji('⚡ Experience with installing, configuring and managing Unix/Linux servers'),
+        emoji(
+          '⚡ Experience with shell/bash scripting'
+        ),
+        emoji(
+          '⚡ Knowledge on mailservers like sendmail and postfix'
+        ),
+        emoji(
+          '⚡ Knowledge on Cloud Networks (AWS VPC, AWS Route 53), LAN/WAN'
+        ),
+        emoji(
+          '⚡ Experience with Windows VmWare Workstation, VirtualBox, WSL(Windows Subsystem for Linux)'
+        ),
+       
+      ],
+      softwareSkills: [
+        // ? Check README To get icon details
+        {
+          skillName: 'AWS',
+          iconifyTag: 'logos:aws',
+        },
+        {
+          skillName: 'Digital Ocean',
+          iconifyTag: 'logos:digital-ocean',
+        },
+        {
+          skillName: 'Linux',
+          iconifyTag: 'devicon:linux',
+        },
+        {
+          skillName: 'Bash Scripting',
+          iconifyTag: 'logos:bash',
+        },
+        {
+          skillName: 'Vmware',
+          iconifyTag: 'file-icons:vmware',
+        },
+        {
+          skillName: 'Vmware',
+          iconifyTag: 'simple-icons:virtualbox',
+        },
+        {
+          skillName: 'Apache',
+          iconifyTag: 'devicon:apache-wordmark',
+        },
+      ]
+    }
   ],
 };
 
@@ -210,6 +250,7 @@ export const projects: ProjectType[] = [
     name: 'Personal portfolio',
     desc: 'Design my own portfolio with nextjs',
     github: 'https://github.com/alcjho/portfolio',
+    link: 'https://jahinys.com'
   },
   {
     name: 'Web scrapping for Kijiji.ca ads',
