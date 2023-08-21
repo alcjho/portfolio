@@ -28,63 +28,17 @@ export const contact = {};
 
 export const socialLinks: SocialLinksType = {
   url: 'https://1hanzla100.github.io/',
-  linkedin: 'https://www.linkedin.com/in/1hanzla100/',
-  github: 'https://github.com/1hanzla100',
-  instagram: 'https://www.instagram.com/__hanzla100',
-  facebook: 'https://www.facebook.com/1hanzla100',
-  twitter: 'https://twitter.com/1hanzla100',
+  linkedin: 'https://www.linkedin.com/in/louis-jhonny-alcius-20807a75/',
+  github: 'https://github.com/alcjho',
+  // facebook: 'https://www.facebook.com/1hanzla100',
 };
 
 export const skillsSection: SkillsSectionType = {
-  title: 'What I do',
-  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
+  title: 'I have skills with :',
+  subTitle: '',
   data: [
     {
-      title: 'Full Stack Development',
-      lottieAnimationFile: '/lottie/skills/fullstack.json', // Path of Lottie Animation JSON File
-      skills: [
-        emoji(
-          '⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
-        ),
-        emoji('⚡ Building responsive static websites using Next.js')
-      ],
-      softwareSkills: [
-        {
-          skillName: 'HTML-5',
-          iconifyTag: 'vscode-icons:file-type-html',
-        },
-        {
-          skillName: 'CSS-3',
-          iconifyTag: 'vscode-icons:file-type-css',
-        },
-        {
-          skillName: 'JavaScript',
-          iconifyTag: 'logos:javascript',
-        },
-        {
-          skillName: 'Reactjs',
-          iconifyTag: 'vscode-icons:file-type-reactjs',
-        },
-        {
-          skillName: 'Nextjs',
-          iconifyTag: 'vscode-icons:file-type-light-next',
-        },
-        {
-          skillName: 'Python',
-          iconifyTag: 'logos:python',
-        },
-        {
-          skillName: 'NPM',
-          iconifyTag: 'logos:npm-icon',
-        },
-        {
-          skillName: 'Yarn',
-          iconifyTag: 'logos:yarn',
-        },
-      ],
-    },
-    {
-      title: 'Cloud Infra-Architecture',
+      title: 'Cloud/Microservices Architecture',
       lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
       skills: [
         emoji('⚡ Experience of working on multiple cloud platforms'),
@@ -129,7 +83,51 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: 'logos:sentry-icon',
         },
       ],
-    }
+    },
+    {
+      title: 'Full Stack Development',
+      lottieAnimationFile: '/lottie/data.json', // Path of Lottie Animation JSON File
+      skills: [
+        emoji(
+          '⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
+        ),
+        emoji('⚡ Building responsive static websites using Next.js')
+      ],
+      softwareSkills: [
+        {
+          skillName: 'HTML-5',
+          iconifyTag: 'vscode-icons:file-type-html',
+        },
+        {
+          skillName: 'CSS-3',
+          iconifyTag: 'vscode-icons:file-type-css',
+        },
+        {
+          skillName: 'JavaScript',
+          iconifyTag: 'logos:javascript',
+        },
+        {
+          skillName: 'Reactjs',
+          iconifyTag: 'vscode-icons:file-type-reactjs',
+        },
+        {
+          skillName: 'Nextjs',
+          iconifyTag: 'vscode-icons:file-type-light-next',
+        },
+        {
+          skillName: 'Python',
+          iconifyTag: 'logos:python',
+        },
+        {
+          skillName: 'NPM',
+          iconifyTag: 'logos:npm-icon',
+        },
+        {
+          skillName: 'Yarn',
+          iconifyTag: 'logos:yarn',
+        },
+      ],
+    },
   ],
 };
 
@@ -154,8 +152,8 @@ export const SkillBars: SkillBarsType[] = [
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: 'Sherbrooke university',
-    subHeader: 'Master of Science in Computer Science',
+    schoolName: 'Université de Sherbrooke',
+    subHeader: 'Master of Science in software engineering',
     duration: 'September 2017 - November 2020',
     desc: 'Working on my first publication in the research on early sizing of microservices with COSMIC methods.',
     descBullets: [
@@ -168,94 +166,109 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Frontend Developer',
-    company: 'Duseca Software',
-    companyLogo: '/img/icons/common/dusecaSoftware.jpg',
-    date: 'Apr 2022 – Jun 2022',
-    desc: 'I worked as frontend web developer to design web based admin dashboards for mulitple apps using Django, Bootstrap, jQuery, Chart.js and some other libraries.',
+    role: 'Technical lead',
+    company: 'Soumissionrenovation',
+    companyLogo: '/img/icons/common/renoquotes.webp',
+    date: 'July 2020 – Jun 2023',
+    desc: 'Leading a team of 5 developer: 2 Backend developer, 2 Frontend developer and 1 UX/UI designer. First project was to Migrate existing legacy application to enhanced technology (NextJS) with a continuous delivery approach. I proposed new architecture, new collaboration tools and processe and I managed the entire software project to the end',
   },
   {
-    role: 'API Engineer',
-    company: 'Duseca Software',
-    companyLogo: '/img/icons/common/dusecaSoftware.jpg',
-    date: 'Jan 2022 – Mar 2022',
-    desc: 'I worked as API Engineer on a Kale App. Kale is a community platform for the creation of social reviews based on verified transactions. I built Fully Optimized and High Performance RESTful APIs using Django, DjangoRESTFramework, PostgresSQL, JWT Authentication, AWS, Integrated Plaid APIs for Fetching Bank Transactions, Integrated Sentry for monitoring Django Server and deployed the API on Heroku Server.',
+    role: 'Senior Backend Developer',
+    company: 'Soumissionrenovation',
+    companyLogo: '/img/icons/common/renoquotes.webp',
+    date: 'May 2017 – Jun 2023',
+    desc: 'I worked as a senior web developer to design web based admin dashboards for mulitple user roles using NextJS SSG/SSR/ISR, custom NodeJS server, react, and more.',
     // descBullets: [
     // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
     // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     // ],
   },
   {
-    role: 'Full Stack Developer',
-    company: 'Bleed-AI',
-    companyLogo: '/img/icons/common/bleedAI.jpg',
-    date: 'Sept 2021 - Oct 2021',
-    desc: 'Worked as django web developer to create a website in which I integrated computer vision AI model (built by the team of BleedAI) to process YouTube URLs and show Real Time processing on Website using Django Channels WebSockets , threading for running multiple instances of AI Model, jQuery for UI rendering and deployed it on Heroku server.',
+    role: 'Proactive service coordinator',
+    company: 'Ericsson',
+    companyLogo: '/img/icons/common/Ericsson_logo.svg.png',
+    date: 'Jan 2013 - December 2015',
+    desc: 'Technical lead for proactive service. Create weekly proactive report on core network by sending email alerts and realtime notification to customer. Prioritize issues and coordinate resolution with support team and project team',
   },
   {
-    role: 'Backend Developer',
-    company: 'Wapidu',
-    companyLogo: '/img/icons/common/wapidu.jpg',
-    date: 'Sept 2021',
-    desc: 'Worked as a Django Developer to integrate Stripe payment gateway in wapidu.com and Created REST APIs using Django REST Framework to integrate Django Stripe backend to Vue.js Frontend and Deployed it on Azure based Docker container registry.',
+    role: 'Telecom service engineer ',
+    company: 'Ericsson',
+    companyLogo: '/img/icons/common/Ericsson_logo.svg.png',
+    date: 'May 2009 - Jan 2013',
+    desc: 'Multimediation, multi activation : consist of writing business logic to collect data from various telecom networks and network element like mobile phones and distribute them to other systems like Billing, Data analysis and Monitoring systens',
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: 'developer-portfolio',
-    desc: 'Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.',
-    github: 'https://github.com/1hanzla100/developer-portfolio',
-    link: 'https://developer-portfolio-1hanzla100.vercel.app/',
+    name: 'Soumissionrenovation.ca',
+    desc: 'Software development project with Nextjs 13, Javascript/Typescript, Nodejs 18, MySQL, using CI/CD tools like Jenkins and Docker for instant delivery',
+    github: 'https://github.com/alcjho/portfolio',
+    link: 'https://renoquotes.com'
   },
   {
-    name: 'AtlasMart',
-    desc: 'With Atlas Mart, it’s easy to find the products with the best price and ship them straight to your door.',
-    github: 'https://github.com/1hanzla100/Django-React-Marketplace',
+    name: 'Personal portfolio',
+    desc: 'Design my own portfolio with nextjs',
+    github: 'https://github.com/alcjho/portfolio',
   },
   {
-    name: 'Technota (Forum)',
-    desc: 'Get hands-on experience in technical skills with Technota',
-    github: 'https://github.com/1hanzla100/django-react-forum',
+    name: 'Web scrapping for Kijiji.ca ads',
+    desc: 'Collect potential renovation leads from kijiji for callcenter agents',
+    github: 'https://github.com/alcjho/kijiji_scrapper.git',
   },
   {
-    name: 'Shopaza (Ecommerce)',
-    desc: 'Now your reach to all your favorite entertainment and luxury items is just one touch apart',
-    github: 'https://github.com/1hanzla100/Django-ecommerce',
+    name: 'Web scrapping for RBQ licence',
+    desc: 'Autoqualify new contractors by Scrapping their rbq license information on government website',
+    github: 'https://github.com/alcjho/rbq_scraper.git',
   },
+  {
+    name: 'Pacifiktransfert.com (suspended)',
+    desc: 'Money transfert application build with Strapi backend and Nextjs',
+    github: 'https://github.com/alcjho/pacifiktransfert.git',
+  },
+  {
+    name: 'Rosenaturelle.com (expired)',
+    desc: 'Full ecommerce website build with nodejs, express and ejs template with third party shipping and stripe payment integration',
+    github: 'https://github.com/alcjho/rose_nature_elle.git',
+  }
 ];
 
-export const feedbacks: FeedbackType[] = [
-  {
-    name: 'John Smith',
-    feedback:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
-  },
-  {
-    name: 'John Smith',
-    feedback:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
-  },
-];
+// export const feedbacks: FeedbackType[] = [
+//   {
+//     name: 'John Smith',
+//     feedback:
+//       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
+//   },
+//   {
+//     name: 'John Smith',
+//     feedback:
+//       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
+//   },
+// ];
 
 // option to hide or show the ContactUs component
 export const showContactUs: boolean = true;
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: 'Hanzla Tauqeer',
+  title: 'Jhonny Alcius',
   description:
-    'A passionate Full Stack Web Developer and Blockchain Developer.',
-  author: 'Hanzla Tauqeer',
+    'A Passionate Software Architect and a Full Stack Web Developer',
+  author: 'Louis Jhonny Alcius',
   image: 'https://avatars3.githubusercontent.com/u/59178380?v=4',
-  url: 'https://developer-portfolio-1hanzla100.vercel.app',
+  url: 'https://jahinys.conm',
   keywords: [
-    'Hanzla',
-    'Hanzla Tauqeer',
-    '@1hanzla100',
-    '1hanzla100',
+    'Johnny',
+    'Jhonny',
+    'jahinys',
+    'jahiny',
     'Portfolio',
-    'Hanzla Portfolio ',
-    'Hanzla Tauqeer Portfolio',
+    'Software Architect portfolio ',
+    'Solution Architect portfolio ',
+    'Technical lead portfolio',
+    'developer portfolio',
+    'Louis Jhonny Alcius Portfolio',
+    'Louis Johnny Portfolio',
+    'Alcius Portfolio'
   ],
 };

@@ -69,7 +69,7 @@ const Navigation = () => {
                 </Row>
               </div>
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                {socialLinks.facebook && (
+                {/* {socialLinks.facebook && (
                   <NavItem>
                     <NavLink
                       rel="noopener"
@@ -84,23 +84,7 @@ const Navigation = () => {
                       </span>
                     </NavLink>
                   </NavItem>
-                )}
-                {socialLinks.instagram && (
-                  <NavItem>
-                    <NavLink
-                      rel="noopener"
-                      aria-label="Instagram"
-                      className="nav-link-icon"
-                      href={socialLinks.instagram}
-                      target="_blank"
-                    >
-                      <i className="fa fa-instagram" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Instagram
-                      </span>
-                    </NavLink>
-                  </NavItem>
-                )}
+                )} */}
                 {socialLinks.github && (
                   <NavItem>
                     <NavLink
