@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { ChangeEvent, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import classnames from 'classnames';
 import Alert from './Alerts';
@@ -18,7 +18,7 @@ import {
 } from 'reactstrap';
 
 export const ContactUs = () => {
-  const form = useRef<HTMLFormElement>(null);
+  const [ formData, setFormData ] = useState({});
   const [alert, setAlert] = useState<{
     color: string;
     icon: string;
@@ -37,29 +37,28 @@ export const ContactUs = () => {
     message: ' Oops! Something went wrong. Please try again later.',
   };
 
+  const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
+    const { value, name } = e.target;
+    setFormData({...formData, [name]: value});
+  }
+
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('submitting');
-
-    console.log(form.current);
-
     const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-
     const emailJsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-
     const emailJsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
     if (
       emailJsServiceId &&
       emailJsTemplateId &&
       emailJsPublicKey &&
-      form.current
+      formData
     ) {
       emailjs
-        .sendForm(
+        .send(
           emailJsServiceId,
           emailJsTemplateId,
-          form.current,
+          formData,
           emailJsPublicKey
         )
         .then(
@@ -78,7 +77,7 @@ export const ContactUs = () => {
   return (
     <>
       <section className="section section-lg section-shaped">
-        <form ref={form} onSubmit={sendEmail}>
+        <form onSubmit={sendEmail}>
           {alert && (
             <Alert
               color={alert.color}
@@ -103,9 +102,12 @@ export const ContactUs = () => {
                           </InputGroupText>
                         </InputGroupAddon>
                         <Input
+                          id="user_name"
                           placeholder="Your name"
                           type="text"
                           name="user_name"
+                          required={true}
+                          onChange={(e)=>handleChange(e)}
                         />
                       </InputGroup>
                     </FormGroup>
@@ -117,9 +119,12 @@ export const ContactUs = () => {
                           </InputGroupText>
                         </InputGroupAddon>
                         <Input
+                          id="user_email"
                           placeholder="Email address"
                           name="user_email"
                           type="email"
+                          required={true}
+                          onChange={(e)=>handleChange(e)}
                         />
                       </InputGroup>
                     </FormGroup>
@@ -127,10 +132,13 @@ export const ContactUs = () => {
                       <Input
                         className="form-control-alternative"
                         cols="80"
+                        id="user_message"
                         name="user_message"
                         placeholder="Type a message..."
                         rows="4"
                         type="textarea"
+                        required={true}
+                        onChange={(e)=>handleChange(e)}
                       />
                     </FormGroup>
                     <div>
